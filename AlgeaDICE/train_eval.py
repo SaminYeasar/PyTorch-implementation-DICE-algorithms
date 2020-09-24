@@ -150,22 +150,7 @@ def main(_):
     eval_env = wrappers.check_and_normalize_box_actions(eval_env)
     eval_env.seed(FLAGS.seed + 1)
 
-    # spec = (
-    #     tensor_spec.TensorSpec([env.observation_space.shape[0]], tf.float32,
-    #                            'observation'),
-    #     tensor_spec.TensorSpec([env.action_space.shape[0]], tf.float32, 'action'),
-    #     tensor_spec.TensorSpec([env.observation_space.shape[0]], tf.float32,
-    #                            'next_observation'),
-    #     tensor_spec.TensorSpec([1], tf.float32, 'reward'),
-    #     tensor_spec.TensorSpec([1], tf.float32, 'mask'),
-    # )
-    # init_spec = tensor_spec.TensorSpec([env.observation_space.shape[0]],
-    #                                    tf.float32, 'observation')
 
-    # replay_buffer = tf_uniform_replay_buffer.TFUniformReplayBuffer(
-    #     spec, batch_size=1, max_length=FLAGS.max_timesteps)
-    # init_replay_buffer = tf_uniform_replay_buffer.TFUniformReplayBuffer(
-    #     init_spec, batch_size=1, max_length=FLAGS.max_timesteps)
 
     hparam_str_dict = dict(algo=FLAGS.algo, seed=FLAGS.seed, env=FLAGS.env_name, dqn=FLAGS.use_dqn)
     hparam_str = ','.join([
@@ -198,17 +183,7 @@ def main(_):
                                        capacity=FLAGS.max_timesteps * 2,
                                        batch_size=FLAGS.sample_batch_size,
                                        device=device)
-    # init_replay_buffer = utils.ReplayBuffer(
-    #     obs_shape=env.observation_space.shape,
-    #     action_shape=env.action_space.shape,
-    #     capacity=FLAGS.max_timesteps * 2,
-    #     batch_size=FLAGS.sample_batch_size,
-    #     device=device)
-    #
-    # replay_buffer_iter = iter(
-    #     replay_buffer.as_dataset(sample_batch_size=FLAGS.sample_batch_size))
-    # init_replay_buffer_iter = iter(
-    #     init_replay_buffer.as_dataset(sample_batch_size=FLAGS.sample_batch_size))
+
 
     log_dir = os.path.join(FLAGS.save_dir, 'logs')
     log_filename = os.path.join(log_dir, hparam_str)
