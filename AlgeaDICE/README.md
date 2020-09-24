@@ -30,3 +30,7 @@ Run AlgaeDICE on HalfCheetah:
 python -m algae_dice.train_eval --logtostderr --save_dir=$HOME/algae/ \
     --env_name=HalfCheetah-v2 --seed=42
 ```
+
+## Performance comparison with the original implementation
+
+![](https://imgur.com/WtrSzs3.png)
