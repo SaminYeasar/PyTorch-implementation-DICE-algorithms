@@ -37,7 +37,5 @@ python -m algae_dice.train_eval --logtostderr --save_dir=$HOME/algae/ \
 
 ## Performance comparison with the original implementation
 
-![](https://imgur.com/WtrSzs3.png)
-![](https://imgur.com/xy010PV.png)
-![](https://imgur.com/X5XCRHQ.png)
-![](https://imgur.com/ZbyUnPw.png)
+![](https://imgur.com/deji3mQ.jpg)
+
