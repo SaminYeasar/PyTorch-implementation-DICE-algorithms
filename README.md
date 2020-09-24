@@ -13,7 +13,7 @@ You can site the code base:
 ```
 @misc{pytorchrl,
   author = {Arnob, SY},
-  title = {PyTorch Implementations of DICE Algorithms},
+  title = {PyTorch Implementation of DICE Algorithms},
   year = {2020},
   publisher = {GitHub},
   journal = {GitHub repository},
