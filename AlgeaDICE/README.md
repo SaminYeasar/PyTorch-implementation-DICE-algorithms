@@ -1,10 +1,14 @@
 # AlgaeDICE
 
-PyTorch Code Implementation for AlgaeDICE as described in `AlgaeDICE: Policy Gradient from Arbitrary
+PyTorch Code Implementation for AlgaeDICE as described in  the paper: 
+
+* `AlgaeDICE: Policy Gradient from Arbitrary
 Experience' by Ofir Nachum, Bo Dai, Ilya Kostrikov, Yinlam Chow, Lihong Li, and
 Dale Schuurmans.
 
-Paper available on arXiv [here](https://arxiv.org/abs/1912.02074).
+* Paper available on arXiv [here](https://arxiv.org/abs/1912.02074).
+
+* Original code implementation in Tensorflow is [here](https://github.com/google-research/google-research/tree/master/algae_dice)
 
 You can site the code base:
 ```
