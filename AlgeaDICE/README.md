@@ -37,5 +37,6 @@ python -m algae_dice.train_eval --logtostderr --save_dir=$HOME/algae/ \
 
 ## Performance comparison with the original implementation
 
+* Performance in compared on seed (0-5) with std 1 over 100k timesteps. (Often paper plot with 75% of the variance)
 ![](https://imgur.com/deji3mQ.jpg)
 
