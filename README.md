@@ -1,8 +1,12 @@
 # PyTorch-implementation-DICE-algorithms
 
+## Code Implementation includes:
+* [AlgeaDICE](https://github.com/SaminYeasar/PyTorch-implementation-DICE-algorithms/tree/master/AlgeaDICE)
+* [ValueDICE]
 
 * Original code implementation is in Tensorflow. Find the using the following links
-  - [AlgeaDICE](https://github.com/google-research/google-research/tree/master/algae_dice)
+  - [Tensorflow implementation of AlgeaDICE](https://github.com/google-research/google-research/tree/master/algae_dice)
+* Performance of the implementations are compared.
 
 You can site the code base:
 ```
