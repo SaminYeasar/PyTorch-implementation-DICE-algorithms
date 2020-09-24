@@ -30,7 +30,14 @@ Run AlgaeDICE on HalfCheetah:
 python -m algae_dice.train_eval --logtostderr --save_dir=$HOME/algae/ \
     --env_name=HalfCheetah-v2 --seed=42
 ```
+## Important tricks
+
+* Doubel-Q learning and Mixed critic update is important for training algeaDICE
+* Unlike original implementation, there's no separate buffer to store initial states, here we can consider each state as initial state to the agent. Similar assumption is made in [here] (https://arxiv.org/abs/1912.05032)
 
 ## Performance comparison with the original implementation
 
 ![](https://imgur.com/WtrSzs3.png)
+![](https://imgur.com/xy010PV.png)
+![](https://imgur.com/X5XCRHQ.png)
+![](https://imgur.com/ZbyUnPw.png)
